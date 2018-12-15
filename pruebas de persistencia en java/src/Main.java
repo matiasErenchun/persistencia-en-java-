@@ -1,21 +1,31 @@
+import java.io.BufferedReader;
 import java.util.ArrayList;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
 
 public class Main
 {
     private static ArrayList<Personaje> listaDePersonajes;
     private static Lector lector;
-    public static void main(String[] args)
+    public static void main(String[] args) throws IOException
     {
        lector= new Lector();
        listaDePersonajes = new ArrayList<Personaje>();
+       File fichero = new File("D:/repo git local 2/persitencia en java/persistencia-en-java-/pruebas de persistencia en java/data.txt");// al momento de eliminar esta direccion es la valida.
+       System.out.println("el archivo existe"+fichero.exists());
+       Main.crearArchivo(fichero);
+
        Main.menu();
+       Main.eliminarFichero(fichero);
     }
 
     private static void menu()
     {
         boolean b=true;
         int i=0;
-        while(true)
+        while(b)
         {
             System.out.println("las opciones de menu son :");
             System.out.println("presione 0 para salir.");
@@ -81,6 +91,41 @@ public class Main
                 String s= pj.ToString();
                 System.out.println(s);
             }
+        }
+    }
+
+    private static void crearArchivo(File file)throws IOException
+    {
+        BufferedWriter bw = null;
+        if(file.exists())
+        {
+            bw = new BufferedWriter(new FileWriter(file));
+
+        }
+        else
+        {
+            File fichero = new File("D:/repo git local 2/persitencia en java/persistencia-en-java-/pruebas de persistencia en java/data.txt");//la direccion final define el nombre  del archivo
+            fichero.setWritable(true);
+            bw = new BufferedWriter(new FileWriter(fichero));
+
+        }
+        bw.close();
+
+    }
+
+    private static void eliminarFichero(File fichero)
+    {
+        String nombreFile;
+        if (!fichero.exists())// si el fichero no existe
+        {
+            nombreFile=fichero.getName();
+            System.out.println("El archivo "+nombreFile +" no existe.");
+        }
+        else // si el fichero existe
+        {
+            nombreFile=fichero.getName();
+            fichero.delete();
+            System.out.println("El archivo "+nombreFile +" fue eliminado.");
         }
     }
 
