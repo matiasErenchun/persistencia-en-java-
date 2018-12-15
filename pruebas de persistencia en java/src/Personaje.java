@@ -1,4 +1,6 @@
-public class Personaje
+import java.io.Serializable;
+
+public class Personaje implements Serializable
 {
     private String name;
     private String raza;
