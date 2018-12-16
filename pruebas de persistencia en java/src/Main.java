@@ -1,24 +1,21 @@
-import java.io.BufferedReader;
+import java.io.*;
 import java.util.ArrayList;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.BufferedWriter;
-import java.io.IOException;
 
 public class Main
 {
     private static ArrayList<Personaje> listaDePersonajes;
     private static Lector lector;
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
        lector= new Lector();
        listaDePersonajes = new ArrayList<Personaje>();
        File fichero = new File("D:/repo git local 2/persitencia en java/persistencia-en-java-/pruebas de persistencia en java/data.txt");// al momento de eliminar esta direccion es la valida.
-       System.out.println("el archivo existe"+fichero.exists());
-       Main.crearArchivo(fichero);
+       fichero=Main.crearArchivo(fichero);
+       if(fichero.exists()) {
+           Main.leerDatos(fichero);
+       }
 
        Main.menu();
-       Main.eliminarFichero(fichero);
+       Main.escribirDatos(fichero);
     }
 
     private static void menu()
@@ -68,7 +65,7 @@ public class Main
         String raza=lector.leerContraseña();
         System.out.println("ingrese la clase del pj");
         String clase=lector.leerContraseña();
-        System.out.println("ingrese la raza del pj");
+        System.out.println("ingrese la edad del pj");
         int edad=lector.leerNumero("ingrese un numero ");
         Personaje pj1= new Personaje(name,raza,clase,edad);
         return pj1;
@@ -94,23 +91,19 @@ public class Main
         }
     }
 
-    private static void crearArchivo(File file)throws IOException
+    private static File  crearArchivo(File fichero)throws IOException
     {
-        BufferedWriter bw = null;
-        if(file.exists())
+
+        if(!fichero.exists())// si el archivo no existe se crea uno nuevo.
         {
-            bw = new BufferedWriter(new FileWriter(file));
+            File miFichero = new File("D:/repo git local 2/persitencia en java/persistencia-en-java-/pruebas de persistencia en java/data.txt");//la direccion final define el nombre  del archivo
+            miFichero.setWritable(true);
+            System.out.println(miFichero.getName());
+            return miFichero;
 
         }
-        else
-        {
-            File fichero = new File("D:/repo git local 2/persitencia en java/persistencia-en-java-/pruebas de persistencia en java/data.txt");//la direccion final define el nombre  del archivo
-            fichero.setWritable(true);
-            bw = new BufferedWriter(new FileWriter(fichero));
 
-        }
-        bw.close();
-
+        return fichero;
     }
 
     private static void eliminarFichero(File fichero)
@@ -128,5 +121,48 @@ public class Main
             System.out.println("El archivo "+nombreFile +" fue eliminado.");
         }
     }
+
+    private static void escribirDatos(File fichero)throws IOException
+    {
+        Main.eliminarFichero(fichero);
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fichero));
+        for (Personaje personaje: listaDePersonajes)
+        {
+                oos.writeObject(personaje);
+        }
+        oos.close();
+        
+    }
+
+    private static void cargarDatos(File fichero)throws IOException, ClassNotFoundException
+    {
+        if(fichero.exists())
+        {
+            Main.leerDatos(fichero);
+        }
+    }
+
+    private static void leerDatos(File fichero) throws IOException, ClassNotFoundException
+    {
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fichero));
+        try {
+
+
+            Object personajeContenedor = ois.readObject();
+            while (personajeContenedor != null) {
+                if (personajeContenedor instanceof Personaje) {
+                    Main.agregarPersonaje((Personaje) personajeContenedor);
+                }
+                personajeContenedor = ois.readObject();
+            }
+            ois.close();
+        }  catch(EOFException ex) // es nesesaria esta excepcion  para que al leer el final del archivo no se caiga el programa o se podria poner algun simbolo que detenga la lectura al final del archivo
+        {
+            System.out.println("\nFinal de archivo, carga de datos correcta");
+        }
+    }
+
+
+
 
 }

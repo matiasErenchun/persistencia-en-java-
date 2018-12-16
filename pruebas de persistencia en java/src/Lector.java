@@ -11,9 +11,9 @@ public class Lector
     public String leerContraseña()
     {
         String contraseña = this.lector.nextLine();
-        while(contraseña.equals("")|| contraseña.equals(null)|| contraseña.length()<6)
+        while(contraseña.equals("")|| contraseña.equals(null))
         {
-            System.out.println(" contraseña muy corta, por favor ingrese una con mas de 6 caracteres");
+            System.out.println(" ingrese un nombre valido");
             contraseña = this.lector.nextLine();
         }
         return contraseña;

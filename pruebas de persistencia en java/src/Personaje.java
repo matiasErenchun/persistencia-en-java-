@@ -56,6 +56,6 @@ public class Personaje implements Serializable
 
     public String ToString()
     {
-        return this.name+" es de la raza"+this.raza+" tiene una edad de  "+this.edad+" y es de la clase"+this.clase;
+        return this.name+" es de la raza "+this.raza+" tiene una edad de  "+this.edad+" y es de la clase "+this.clase;
     }
 }
