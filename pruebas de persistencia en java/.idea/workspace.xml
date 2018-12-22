@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2e62d87-9edc-42bf-aeae-c7aad17187f4" name="Default Changelist" comment="" />
+    <list default="true" id="a2e62d87-9edc-42bf-aeae-c7aad17187f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas de persistencia en java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas de persistencia en java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personaje.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,18 +21,38 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="160" column="78" selection-start-line="160" selection-start-column="78" selection-end-line="160" selection-end-column="78" />
+            <state relative-caret-position="21">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#menu#0;class#Main#0" />
+                <element signature="method#crearPersonaje#0;class#Main#0" />
+                <element signature="e#2560#2561#0" expanded="true" />
                 <element signature="e#2614#2615#0" expanded="true" />
                 <element signature="method#mostrarPersonajes#0;class#Main#0" />
-                <element signature="method#arch#0;class#Main#0" />
-                <element signature="e#3120#3364#1" />
                 <element signature="method#eliminarFichero#0;class#Main#0" />
                 <element signature="method#escribirDatos#0;class#Main#0" />
                 <element signature="method#cargarDatos#0;class#Main#0" />
+                <element signature="method#leerDatos#0;class#Main#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Objeto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
+              <folding>
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,25 +73,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Personaje.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="58" column="105" selection-start-line="58" selection-start-column="105" selection-end-line="58" selection-end-column="105" />
+            <state relative-caret-position="368">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
               <folding>
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#762#763#0" expanded="true" />
-                <element signature="e#789#790#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,23 +103,36 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Lector.java" />
+        <option value="$PROJECT_DIR$/src/Equipamiento.java" />
+        <option value="$PROJECT_DIR$/src/Objetos.java" />
         <option value="$PROJECT_DIR$/src/Personaje.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="y" value="460" />
     <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="height" value="248" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="pruebas de persistencia en java" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="pruebas de persistencia en java" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,21 +142,23 @@
             </path>
             <path>
               <item name="pruebas de persistencia en java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebas de persistencia en java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544928282172" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545506754902" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gson-2.8.5.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -174,23 +201,26 @@
       <updated>1544906720477</updated>
       <workItem from="1544906724003" duration="110000" />
       <workItem from="1544906968811" duration="14947000" />
+      <workItem from="1545168713225" duration="260000" />
+      <workItem from="1545183113007" duration="303000" />
+      <workItem from="1545502483639" duration="6000" />
+      <workItem from="1545502625680" duration="4331000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15057000" />
+    <option name="totallyTimeSpent" value="19957000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="20" width="1346" height="688" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13141525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3464448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
@@ -201,8 +231,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -218,9 +249,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pruebas de persistencia en java.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -231,48 +259,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pruebas de persistencia en java.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipamiento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Objeto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Personaje.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="58" column="105" selection-start-line="58" selection-start-column="105" selection-end-line="58" selection-end-column="105" />
+        <state relative-caret-position="368">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding>
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="160" column="78" selection-start-line="160" selection-start-column="78" selection-end-line="160" selection-end-column="78" />
+        <state relative-caret-position="21">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#menu#0;class#Main#0" />
+            <element signature="method#crearPersonaje#0;class#Main#0" />
+            <element signature="e#2560#2561#0" expanded="true" />
             <element signature="e#2614#2615#0" expanded="true" />
             <element signature="method#mostrarPersonajes#0;class#Main#0" />
-            <element signature="method#arch#0;class#Main#0" />
-            <element signature="e#3120#3364#1" />
             <element signature="method#eliminarFichero#0;class#Main#0" />
             <element signature="method#escribirDatos#0;class#Main#0" />
             <element signature="method#cargarDatos#0;class#Main#0" />
+            <element signature="method#leerDatos#0;class#Main#0" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>pruebas de persistencia en java</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>gson-2.8.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

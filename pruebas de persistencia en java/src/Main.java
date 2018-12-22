@@ -1,5 +1,10 @@
 import java.io.*;
 import java.util.ArrayList;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
 
 public class Main
 {
@@ -85,7 +90,7 @@ public class Main
         else{
             for (Personaje pj: listaDePersonajes)
             {
-                String s= pj.ToString();
+                String s= pj.myToString();
                 System.out.println(s);
             }
         }
