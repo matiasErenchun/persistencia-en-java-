@@ -30,4 +30,11 @@ public class Objeto
     {
         this.valor = valor;
     }
+
+    public void mostrarObjeto()
+    {
+        System.out.println(this.name);
+        System.out.println(this.peso);
+        System.out.println(this.valor);
+    }
 }

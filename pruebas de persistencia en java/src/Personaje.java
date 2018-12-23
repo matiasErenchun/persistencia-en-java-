@@ -61,4 +61,20 @@ public class Personaje implements Serializable
     {
         return this.name+" es de la raza "+this.raza+" tiene una edad de  "+this.edad+" y es de la clase "+this.clase;
     }
+
+    public void agregarObjeto(String nombre,float valor, float peso)
+    {
+
+        Objeto ob=new Objeto(nombre,valor,peso);
+        this.mochila.add(ob);
+    }
+
+    public void mostrarObjetos()
+    {
+        for (Objeto obj: this.mochila)
+        {
+            obj.mostrarObjeto();
+        }
+    }
+
 }
